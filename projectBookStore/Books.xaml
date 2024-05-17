@@ -1,0 +1,130 @@
+﻿<Window x:Class="projectBookStore.Books"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projectBookStore"
+        mc:Ignorable="d"
+        Title="Books" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/img/Bg-BooksData.png"/>
+        </Grid.Background>
+        <Button Width="154" Height="58" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,-12,0,0" Background="Transparent" BorderBrush="Transparent" Click="btnBooks_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="Transparent">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+            <StackPanel>
+            </StackPanel>
+        </Button>
+        <Button Width="154" Height="58" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="246,-12,0,0" Background="Transparent" BorderBrush="Transparent" Click="btnCustomers_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="Transparent">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+            <StackPanel>
+            </StackPanel>
+        </Button>
+        <Button Width="154" Height="58" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="469,-12,0,0" Background="Transparent" BorderBrush="Transparent" Click="btnTransaction_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="Transparent">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+            <StackPanel>
+            </StackPanel>
+        </Button>
+        <Button Width="154" Height="58" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="653,360,0,0" Background="Transparent" BorderBrush="Transparent" Click="btnMenu_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="Transparent">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter Property="Background" Value="Transparent"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+            <StackPanel>
+                <Label Content="เมนูหลัก" FontSize="20" />
+            </StackPanel>
+        </Button>
+        <Label Content="ค้นหาหนังสือ" HorizontalAlignment="Left" Margin="32,76,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="179,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241" Height="30" FontSize="18"/>
+        <Button x:Name="btnSearch" Content="ค้นหา" HorizontalAlignment="Left" Margin="424,78,0,0" VerticalAlignment="Top" Height="34" Width="122" Background="#FFAFBBC3" FontSize="20" Click="btnSearch_Click"/>
+        <Label Content="เลขหนังสือ" HorizontalAlignment="Left" Margin="32,149,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtISBN" HorizontalAlignment="Left" Margin="130,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Height="30" FontSize="18"/>
+        <Label Content="ชื่อหนังสือ" HorizontalAlignment="Left" Margin="323,149,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtTitle" HorizontalAlignment="Left" Margin="426,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="343" Height="30" FontSize="18"/>
+        <Label Content="คำอธิบาย" HorizontalAlignment="Left" Margin="32,217,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Margin="128,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="641" Height="30" FontSize="18"/>
+        <Label Content="ราคาหนังสือ" HorizontalAlignment="Left" Margin="32,280,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Margin="128,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="182" Height="30" FontSize="18"/>
+        <Button x:Name="btnAdd" Content="เพิ่ม" HorizontalAlignment="Left" Margin="117,348,0,0" VerticalAlignment="Top" Height="35" Width="122" Background="#FF6FAD07" FontSize="20" Click="btnAdd_Click" Foreground="Black"/>
+        <Button x:Name="btnEdit" Content="แก้ไข" HorizontalAlignment="Left" Margin="292,348,0,0" VerticalAlignment="Top" Height="35" Width="122" Background="#FF2B97DC" FontSize="20" Click="btnEdit_Click"/>
+        <Button x:Name="btnDelete" Content="ลบ" HorizontalAlignment="Left" Margin="471,348,0,0" VerticalAlignment="Top" Height="35" Width="122" Background="#FFDC542B" FontSize="20" Click="btnDelete_Click"/>
+
+    </Grid>
+</Window>
