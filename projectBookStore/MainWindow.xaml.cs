@@ -28,17 +28,17 @@ namespace projectBookStore
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //string username = txtUsername.Text;
-            //string password = txtPassword.Password;
-            //if (username == "admin" && password == "admin1111")
-            //{
+            string username = txtUsername.Text;
+            string password = txtPassword.Password;
+            if (username == "admin" && password == "admin1111")
+            {
             Menu menu = new Menu();
             menu.Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Username หรือ Password ไม่ถูกต้อง", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            //}
+            }
+            else
+            {
+                MessageBox.Show("Username หรือ Password ไม่ถูกต้อง", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
 
 
             //List<String> entries = TransactionsData.GetData();
