@@ -12,6 +12,6 @@
         <TextBox x:Name="txtUsername" HorizontalAlignment="Center" Margin="0,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="206" Height="26"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="297,269,0,0" VerticalAlignment="Top"/>
         <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="0,294,0,0" VerticalAlignment="Top" Width="206" Height="26" />
-        <Button Content="เข้าสู่ระบบ" HorizontalAlignment="Center" Margin="0,355,0,0" VerticalAlignment="Top" Height="29" Width="104" Click="Button_Click" Background="#FFD08777"/>
+        <Button Content="เข้าสู่ระบบ" HorizontalAlignment="Center" Margin="0,355,0,0" VerticalAlignment="Top" Height="29" Width="104" Click="Button_Click" Background="#FF8277D0"/>
     </Grid>
 </Window>
